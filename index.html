@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/flowers.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <title>Dimention Of Time</title>
+</head>
+
+<body>
+  <section class="pembuka">
+    <div class="greetings">
+      <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
+      <span>H</span>
+      <span>A</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+      <span>A</span>
+      <span>N</span>
+      <span>A</span>
+      <span>H</span>
+    </div>
+    <div class="description">
+      <span>Sebuah perkenalan yang tak terduga!</span>
+    </div>
+    <div class="button">
+      <button>
+        <a href="#love" onclick="enableScroll()">Yuk Cek</a>
+      </button>
+    </div>
+  </section>
+  <section id="love">
+    <canvas id="canvas"></canvas>
+    <div class="glow">
+      <span id="textOverlay">A</span>
+      <span id="textOverlay1">N</span>
+      <span id="textOverlay2">A</span>
+      <span id="textOverlay3">H</span>
+    </div>
+  </section>
+  <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">Ar Studio</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ar Studio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#info">Info</a>
+            <a class="nav-link" href="#story">Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home" style="background-image: url(img/bg.png);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>Pertemuan Kita</h2>
+          <h3>Dimulai dari yang yang sangat tidak terduga sama sekali.
+          </h3>
+          <p>Oleh karena itu,Mari kita cek kembali ke masa lalu. </p>
+        </div>
+        <div class="col-md-8 text-center">
+          <img src="img/man with girl.jpg" alt="" width="250" height="250">
+        </div>
+        <div class="col-md-8 text-center">
+          <a href="#info" class="btn btn-secondary">Yuk Scroll Lagi!</a>
+        </div>
+      </div>
+  </section>
+
+  <section id="info" class="info">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2>Sekilas Informasi</h2>
+          <h3>Dimulai dari yang yang sangat tidak terduga sama sekali namun mengesankan.
+          </h3>
+          <p>Kita memang hanya beberapa kali bertemu, tapi itu seperti hal yang tidak pernah terbayangkan sebelumnya</p>
+          <p>Ada sesuatu hal yang sangat berbeda jika berada di dekatmu.</p>
+          <p>Memiliki semangat yang tak pernah redup</p>
+          <p>Membawa kedamaian dalam setiap keadaan.</p>
+          <p>Seperti melodi yang telah lama hilang dalam kehidupanku.Aku merasa kembali menemukan bait demi bait puisi
+            itu, Aku tak pernah menduga bahwa aku akan menemui orang seperti mu di hari itu.</p>
+        </div>
+
+      </div>
+  </section>
+
+  <section id="story" class="story"
+    style="background-image: url(img/7.jpg); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <span>Bagaimana perjalanan ini berjalan?</span>
+          <h2>Cerita ini</h2>
+          <p>Pertemuan yang sangat singkat, namun membawa banyak rasa hingga saat ini, bahkan nanti.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <ul class="timeline">
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url(img/1.jpg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Pertemuan</h3>
+                  <span>Singkat dalam kedipan mata</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Perjalanan yang sangat singkat untuk di lalui
+                  </p>
+                </div>
+              </div>
+
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/2.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Sekian Waktu yang telah di lalui</h3>
+                  <span>Membawa banyak cerita</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Seiring berjalannya waktu, banyak cerita yang telah terjadi dan di lalui.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/3.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Perjuangan Gelar Sarjana</h3>
+                  <span>Stress tapi tetap pada bantuan</span>
+                </div>
+                <div class="timeline-body">
+                  Perjalanan meraih gelar yang diisi banyak hal, tapi tetap ada tempat untuk bercerita.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/4.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Wisuda</h3>
+                  <span>Hal yang dinanti telah tiba</span>
+                </div>
+                <div class="timeline-body">
+                  Hal yang telah di perjuangan dengan keras, telah sampai pada waktunya.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/5.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Wisuda II</h3>
+                  <span>Sesuatu yang direncakan namun tak terjadi</span>
+                </div>
+                <div class="timeline-body">
+                  Jauh hari sebelum waktu ini tiba, telah ada hal yang direncakan, namun semua itu telah menjadi cerita
+                  yang berlalu begitu saja.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/foto1.JPG');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Kamera</h3>
+                  <span>Sesuatu keinginan, tapi hanya angan-angan</span>
+                </div>
+                <div class="timeline-body">
+                  Keinginan untuk memegang kamera dan memotret keadaan, namun kita hanya berfoto seadanya, dan itu cepat
+                  berlalu.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/6.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Hal yang telah berlalu</h3>
+                  <span>Bayang-bayang yang selalu terlihat</span>
+                </div>
+                <div class="timeline-body">
+                  Kini semua telah kita lalui, tapi bayang-bayang itu akan selalu terlihat.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/7.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Hal baru akan datang</h3>
+                  <span>Setiap perjalanan akan menemukan tujuan</span>
+                </div>
+                <div class="timeline-body">
+                  Banyak hal yang akan terjadi kedepan, bahkan kita tidak bisa membacanya dengan seksama. Namun tujuan
+                  itu telah jelas.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/8.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Mimpi</h3>
+                  <span>Kesuksesan yang diraih</span>
+                </div>
+                <div class="timeline-body">
+                  Setiap kita memiliki mimpi yang hendak dicapai, dan sedikit demi sedikit kita telah melangkah ke
+                  arahnya, percayahlah!
+                  Kita ditakdirkan untuk mencapai lebih dari pada ini!.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/9.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Masanya akan tetap sama</h3>
+                  <span>Harapan</span>
+                </div>
+                <div class="timeline-body">
+                  Harapan akan tetap ada, bahkan jika semuanya terasa begitu menyedihkan
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/10.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Hal yang pasti di lewati</h3>
+                  <span>Suasana yang berbeda</span>
+                </div>
+                <div class="timeline-body">
+                  Air mata dan tawa adalah nikmat yang luar biasa. Berkah untuk mekar dan layu.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/11.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Hal yang akan tetap ada</h3>
+                  <span>Waktu yang tidak pernah ada habisnya</span>
+                </div>
+                <div class="timeline-body">
+                  Beberapa hal memerlukan pengorbanan, ada kenangan yang tidak bisa dihapus oleh waktu.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/10.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Tentang rasa</h3>
+                  <span>Ada rasa yang muncul</span>
+                </div>
+                <div class="timeline-body">
+                  Jika berbicara tentang rasa, tentu aku punya rasa terhadapmu.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/11.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Pilihan</h3>
+                  <span>Setiap kita punya pilihan</span>
+                </div>
+                <div class="timeline-body">
+                  Tentu setiap kita punya pilihan terhadap kehidupan dan mencapai kebahagian.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/12.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Tentang rasa II </h3>
+                  <span>Hal yang semestinya diketahui</span>
+                </div>
+                <div class="timeline-body">
+                  Aku pun tak tau tentang siapa yang memenangkan rasa ini dalam hatimu, tapi tentu semua akan tetap
+                  berjalan normal. Tapii setidaknya aku punya anggapan dan sedikitnya aku rasa aku sudah tau jawabannya.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/13.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Jawaban</h3>
+                  <span>Setiap jawaban akan membawa kedamaian</span>
+                </div>
+                <div class="timeline-body">
+                  Apapun jawaban yang telah di tuliskan, itulah yang memangnya seharusnya berjalan. Setiap jawaban itu
+                  akan membawa kepada kedamaian.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/15.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Bunga akan tetap mekar</h3>
+                  <span>Sepanjang tahun</span>
+                </div>
+                <div class="timeline-body">
+                  Bunga yang telah mekar, tidak akan pernah layu. dia abadi.Akan tetap berbau harum, Begitupun dengan
+                  rasa yang ada.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/14.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Kelopak Bunga</h3>
+                  <span>Doa yang tak pernah usai</span>
+                </div>
+                <div class="timeline-body">
+                  Jadi aku akan tetap mendokanmu dalam 6 kebaikan: hatimu menjadi lembut, dadamu terasa lapang,
+                  ketenangan dalam hati, kebahagian, kesuksesan dan kemulian-kemulian dirimu.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/17.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Perjalanan</h3>
+                  <span>Hal yang membuat kuat</span>
+                </div>
+                <div class="timeline-body">
+                  Cintalah yang membuat kita tetap hidup.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/16.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Bintang</h3>
+                  <span>Cahaya yang indah</span>
+                </div>
+                <div class="timeline-body">
+                  Untuk matahari di hari esok, untuk bintang-bintang dimasa lalu.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/17.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Kilauan Cahaya</h3>
+                  <span>Cahaya yang menerangi jalan</span>
+                </div>
+                <div class="timeline-body">
+                  Dia adalah cahaya yang membuatku tetap tegar menjalani kehidupan.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/16.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Petunjuk Bintang</h3>
+                  <span>Cahaya dalam kegelapan</span>
+                </div>
+                <div class="timeline-body">
+                  Tanpa bintang kecil yang memanduku waktu itu, aku sudah tersesat sejak saat itu.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/19.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Perhatian</h3>
+                  <span>Tak hanya satu</span>
+                </div>
+                <div class="timeline-body">
+                  Banyak hal yang menakjubkan didunia ini yang pantas mendapatkan perhatian kita.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/18.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Kebetulan.?</h3>
+                  <span>Apakah benar seperti itu.?</span>
+                </div>
+                <div class="timeline-body">
+                  Tidak ada yang kebetulan di dunia ini, semua punya makna. Begitupun pertemuan kita.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/17.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Keberadaan</h3>
+                  <span>Hal yang membuat kuat</span>
+                </div>
+                <div class="timeline-body">
+                  Setidaknya keberadaanmu membuat aku menjadi kuat, tetaplah disini. sampai waktu yang tidak ditentukan.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/20.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Senyuman</h3>
+                  <span>Tetaplah tersenyum</span>
+                </div>
+                <div class="timeline-body">
+                  Tersenyumlah, karena itu penting!
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up">
+              <div class="timeline-image" style="background-image: url('img/19.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Terima kasih</h3>
+                  <span>Banyak hal</span>
+                </div>
+                <div class="timeline-body">
+                  Kendati demikian, aku tetap mengucapkan banyak terima kasih, sedikit cerita yang telah diperdengarkan
+                  kepadamu. namun membawa banyak dampak dalam kehidupanku. Berbicara denganmu, rasanya aku sedang
+                  mengisi ulang energi yang telah banyak habis, bertemu sesaat merasakan leganya menghadapi dunia.
+                </div>
+              </div>
+            </li>
+            <li data-aos="fade-up" class="timeline-inverted">
+              <div class="timeline-image" style="background-image: url('img/18.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Secangkir teh</h3>
+                  <span>Teh dengan aroma melati</span>
+                </div>
+                <div class="timeline-body">
+                  Jika tak keberatan mari kita menikmati secangkir teh atau sepotong es krim &#129315
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="buket text-center mb-4">
+    <p>Tidak semuanya tertuang disini!</p>
+    <p> Ada sesuatu disini</p>
+    <a href="flower.html">Klik disini!</a>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small class="block">&copy; 2023 Ar Studio. All Rights Reserved.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="audio-container">
+    <audio id="song" autoplay loop>
+      <source src="audio/LAGU1S.COM -Once - Symphony Yang Indah.mp3" type="audio/mp3">
+    </audio>
+
+    <div class="audio-icon-wrapper" style="display: none;">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+<script>
+  const stickyTop = document.querySelector('.sticky-top');
+  const offcanvas = document.querySelector('.offcanvas');
+
+  offcanvas.addEventListener('show.bs.offcanvas', function () {
+    stickyTop.style.overflow = 'visible';
+  });
+
+  offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+    stickyTop.style.overflow = 'hidden';
+  });
+
+</script>
+<script>
+  const rootElement = document.querySelector(":root");
+  const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+  const audioIcon = document.querySelector('.audio-icon-wrapper i');
+  const song = document.querySelector('#song');
+  let isPlaying = false;
+
+  function disableScroll() {
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+    window.onscroll = function () {
+      window.scrollTo(scrollTop, scrollLeft);
+    }
+
+    rootElement.style.scrollBehavior = 'auto';
+  }
+
+  function enableScroll() {
+    window.onscroll = function () { }
+    rootElement.style.scrollBehavior = 'smooth';
+    // localStorage.setItem('opened', 'true');
+    playAudio();
+  }
+
+  function playAudio() {
+    song.volume = 0.1;
+    audioIconWrapper.style.display = 'flex';
+    song.play();
+    isPlaying = true;
+  }
+
+  audioIconWrapper.onclick = function () {
+    if (isPlaying) {
+      song.pause();
+      audioIcon.classList.remove('bi-disc');
+      audioIcon.classList.add('bi-pause-circle');
+    } else {
+      song.play();
+      audioIcon.classList.add('bi-disc');
+      audioIcon.classList.remove('bi-pause-circle');
+    }
+
+    isPlaying = !isPlaying;
+  }
+
+  // if (!localStorage.getItem('opened')) {
+  //   disableScroll();
+  // }
+  disableScroll();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // Durasi animasi (dalam milidetik)
+    offset: 200,    // Offset saat animasi dimulai (dalam piksel)
+  });
+
+</script>
+
+<script src="script.js">
+</script>
+
+</html>
